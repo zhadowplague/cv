@@ -2,6 +2,35 @@
 	Site got style yo
 */
 
+
+/*
+	Header stuff
+*/
+
+header{
+   padding: 2%;
+}
+
+#Menulist{
+	list-style-type: none;
+	-webkit-padding-start: 0;
+	-webkit-margin-after: 2em;
+}
+
+#Menubar{
+	margin:auto;
+}
+
+.Menulist_Item{
+	display:inline;
+	margin-left: 5px;
+	margin-right: 5px; 
+}
+
+/*
+	Body stuff
+*/
+
 body{
    background: #607d8b; /* For browsers that do not support gradients */
    background: -webkit-linear-gradient(left,#607d8b,white,#607d8b);
@@ -13,13 +42,28 @@ body{
    height: 100%;
    text-align:center;
 }
-header{
-   padding: 2%;
+
+.bigbox{
+	display:inline-block;
+	padding: 10px 20px;
+	background-color: white;
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
 }
-h1{
-	
-	text-decoration: line-through;
+
+#therestofit{
+	padding: 2%;
 }
+
+#container{
+	margin:auto;
+}
+
+/*
+	General purpose
+*/
+
 h4{
 	-webkit-margin-after: 0;
 }
@@ -30,60 +74,10 @@ a{
 	border: #607d8b solid 2px;
 	padding: 3px;
 }
-iframe{
-	border:2px solid #607d8b;
-}
 a:hover{
 	background-color: #607d8b;
+	cursor: pointer;
 }
 a:visited{
 	color: black;
-}
-.bigbox{
-	display:inline-block;
-	padding: 10px 20px;
-	background-color: white;
-	border-style:solid;
-	border-color:black;
-	border-width:2px;
-}
-#Menulist{
-	list-style-type: none;
-	-webkit-padding-start: 0;
-	-webkit-margin-after: 2em;
-}
-#therestofit{
-	padding: 2%;
-}
-#container{
-	margin:auto;
-}
-#Menubar{
-	margin:auto;
-}
-#Charlist{
-	text-align:left;
-	-webkit-padding-start: 0;
-	list-style-type: none;
-}
-.Charitem{
-	border-bottom: 2px solid black;
-	padding-bottom: 20px;
-	margin-bottom: 20px;
-}
-.Charitem:last-child{
-	border-bottom: 0;
-	padding-bottom: 0;
-	margin-bottom: 0;
-}
-.Charitem.h3{
-	border-bottom: 2px black solid;
-}
-.Charpic{
-	float: right;
-}
-.Menulist_Item{
-	display:inline;
-	margin-left: 5px;
-	margin-right: 5px; 
 }
