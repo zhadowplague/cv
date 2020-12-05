@@ -11,31 +11,115 @@
 
 <body>
 	<header>
-		<div id="Menubar" class="bigbox">
-			<h1>Albin Sjöström</h1>
-			<ul id="Menulist">
-				<li class="Menulist_Item">
-					<a href="index.html">Hemsida</a>
-				</li>
-				<li class="Menulist_Item">
-					<a>Projekt</a>
-				</li>
-				<li class="Menulist_Item" onclick="cv_button()">
-					<a>CV</a>
-				</li>
-			</ul>
+		<h1>MySite</h1>
+		<div id="MenuContainer">
+			<img src="images/Me.jpg" id="Profile" />
+			<div id="Menubar">
+				<div  class="bigbox">
+					<ul class="menulist">
+						<li onclick="show_project()">
+							<a>Projekt</a>
+						</li>
+						<li onclick="show_cv()">
+							<a>CV</a>
+						</li>
+					</ul>
+				</div>
+				<div  class="bigbox">
+					<h2>Välkommen</h2>
+					<p>
+						Denna sida är skapad och underhållen av mig, Albin Sjöström. <br>
+						Nedan finner du en samling av projekt jag arbetar/arbetade med på fritid/plugget.
+					</p>
+				</div>
+				<div class="bigbox">
+					<ul class="menulist">
+						<li>
+							<a href="https://github.com/zhadowplague/">
+								<img src="images/github.png" alt="Github" class="smallImage" />
+							</a>
+							<a href="https://www.linkedin.com/in/albin-sj%C3%B6str%C3%B6m-3762a6157/">
+								<img src="images/linkedin.png" alt="LinkedIn" class="smallImage" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</header>
-	<div id="therestofit">
-		<div style="left:0; position:fixed; width:100%; text-align:center; background-color:#892D2D">
-			<h1>Under konstruktion</h1>
+	<div id="TheRestOfIt">
+		<div id="Projects">
+			<div class="listbox">
+				<div class="bigbox imagebox">
+					<img src="images/Untitled.png" alt="NoLogo" />
+				</div>
+				<div class="content">
+					<h2>Name pending</h2>
+					<p>
+						Det jag lagt delar av min fritid på senaste året. Ett turnbased-isch fighting hybrid <br>
+						Skriver det i godot vilket är en spelmotor man kodar ett python liknande språk i.
+					</p>
+					<img src="images/Untitled1.png" />
+					<img src="images/Untitled2.png" height="450px" />
+				</div>
+			</div>
+			<div class="listbox">
+				<div class="bigbox imagebox">
+					<img src="images/Rascal.png" alt="RascalLogo" />
+				</div>			
+				<div class="content">
+					<h2>The Rascal</h2>
+					<p>
+						Ett gruppprojekt jag jobbade med under studierna. Ett enspelar adventure skrivet i Unity/C#. <br>
+						Till detta spel gjorde vi även en trailer.
+					</p>
+					<a href="https://www.youtube.com/watch?v=RQ8JpZ4q-iU"> Länk till trailer </a>
+				</div>
+			</div>
+			<div class="listbox">
+				<div class="bigbox imagebox">
+					<span class="helper"></span><img src="images/spacegame.png" alt="SpaceGameLogo" />
+				</div>
+				<div class="content">
+					<h2>SpaceGame</h2>
+					<p>
+						Ett eget projekt jag jobbar med på fritiden. En egen version av spelet asteroids, <br>
+						Skrivet i C# Monogame för android med hjälp av biblioteket Xamarin.
+					</p>
+					<img src="images/spacegame1.png" height="450px" />
+				</div>
+			</div>			
+			<div class="listbox">
+				<div class="bigbox imagebox">
+					<img src="images/RayFighters.png" alt="RayFightersLogo" />
+				</div>
+				<div class="content">
+					<h2>Ray Fighters</h2>
+					<p>
+						Ett gruppprojekt jag jobbade med under studierna. Ett 2D två spelar fighting spel skrivet i C++. <br>
+						Till detta spel gjorde vi även en trailer och en egen hemsida.
+					</p>
+					<a href="https://zhadowplague.github.io/rayfightersSite"> Länk till hemsida </a>
+				</div>
+			</div>
+			<div class="listbox">
+				<div class="bigbox imagebox">
+					<img src="images/TTubkcid.png" alt="TTubkcidLogo" />
+				</div>
+				<div class="content">
+					<h2>TTubkcid Showdown</h2>
+					<p>
+						Ett gruppprojekt jag jobbade med under studierna. En egen tolkning av spelet worms skrivet i C++.
+					</p>
+					<img src="images/TTubkcid1.png" height="450px" />
+				</div>
+			</div>
+			<a href="https://www.dotabuff.com/players/15998921" id="SecretLink"> x </a>
 		</div>
-		<div id="container" class="bigbox" style="height:1000px;">
-			<h2>Välkommen</h2>
-			<p>
-				Denna sida är skapad och underhållen av MIG, Albin Sjöström. <br>
-				Här kan du hitta mitt cv, länkar till föregående projekt mm...
-			</p>
+		<div id="CV">
+			<object data="files/cv.pdf" type="application/pdf" width="100%" height="1500px" >
+			 alt: <p>Pdf not found, something wrong</p>
+		</object>
 		</div>
 	</div>
 </body>

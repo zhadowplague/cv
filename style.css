@@ -9,22 +9,45 @@
 
 header{
    padding: 2%;
+   text-align: center;
 }
 
-#Menulist{
-	list-style-type: none;
-	-webkit-padding-start: 0;
-	-webkit-margin-after: 2em;
+@media all and (max-width: 1700px) {
+	#Profile{
+		display: none;
+	}
+}
+
+#MenuContainer{
+	position:relative;
+	display: inline-block;
+}
+
+#Profile{
+	position: absolute;
+	left: -200px;
+	top: -75px;
+	width: 175px;
+	background-color: white;
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
 }
 
 #Menubar{
-	margin:auto;
+	display:inline-flex;
 }
 
-.Menulist_Item{
-	display:inline;
-	margin-left: 5px;
-	margin-right: 5px; 
+.menulist{
+	list-style-type: none;
+	-webkit-padding-start: 0;
+	-webkit-margin-after: 2em;
+	padding-left: 0px;
+}
+
+.menulist li{
+	display:flex;
+	margin: 5px;
 }
 
 /*
@@ -40,7 +63,17 @@ body{
    margin: 0;
    width: 100%;
    height: 100%;
-   text-align:center;
+   text-align:left;
+}
+
+#TheRestOfIt{
+	padding-left: 2%;
+	padding-right: 2%;
+	height: 1000px;
+}
+
+#SecretLink{
+	float: right;
 }
 
 .bigbox{
@@ -52,14 +85,58 @@ body{
 	border-width:2px;
 }
 
-#therestofit{
-	padding: 2%;
+.listbox{
+	display:block;
+	padding: 30px 20px;
+	margin-bottom: 30px;
+	background-color: white;
+	border-style:solid;
+	border-color:black;
+	border-width:2px;
 }
 
-#container{
-	margin:auto;
+.helper{
+	height: 100%;
+	vertical-align: middle;
+    display: inline-block;	
 }
 
+.content{
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 2px;
+}
+
+.content h2{
+	margin-top: 0px;
+}
+
+.content a{
+	font-size: 22px;
+}
+
+.smallImage{
+	height: 50px;
+}
+
+.mediumImage{
+	height: 100px;
+}
+
+.imagebox{
+	text-align: center;
+	width: 150px;
+	height :150px;
+	vertical-align: middle;	
+	white-space: nowrap;
+}
+
+.imagebox img{
+	max-width:100%;
+	max-height:100%;
+    vertical-align: middle;
+}
+ 
 /*
 	General purpose
 */
@@ -67,12 +144,19 @@ body{
 h4{
 	-webkit-margin-after: 0;
 }
+h2{
+	text-align: left;
+}
 a{
 	font-size: 30px;
 	text-decoration: none;
 	color: black;
 	border: #607d8b solid 2px;
 	padding: 3px;
+}
+p{
+	font-size: 20px;
+	text-align: left;
 }
 a:hover{
 	background-color: #607d8b;
