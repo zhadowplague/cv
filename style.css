@@ -50,6 +50,18 @@ header{
 	margin: 5px;
 }
 
+.linklist{
+	list-style-type: none;
+	-webkit-padding-start: 0;
+	-webkit-margin-after: 2em;
+	padding-left: 0px;
+}
+
+.linklist li{
+	display:inline-flex;
+	margin: 5px;
+}
+
 /*
 	Body stuff
 */
