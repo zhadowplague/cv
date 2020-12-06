@@ -4,6 +4,7 @@ show_project = function() {
 	document.getElementById("ProjectsButton").style.textDecoration  = "underline";	
 	document.getElementById("CV").style.display = "none";
 	document.getElementById("CVButton").style.textDecoration  = "";	
+	document.getElementById("MenuMessage").style.visibility = "visible";	
 };
 
 show_cv = function() {
@@ -11,6 +12,7 @@ show_cv = function() {
 	document.getElementById("ProjectsButton").style.textDecoration  = "";
 	document.getElementById("CV").style.display = "";
 	document.getElementById("CVButton").style.textDecoration  = "underline";
+	document.getElementById("MenuMessage").style.visibility = "hidden";	
 };
 
 hideCV = function() {
