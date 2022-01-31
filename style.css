@@ -16,6 +16,16 @@ header{
 	#Profile{
 		display: none;
 	}
+	
+	.bigbox{
+		display: block;
+	}
+}
+
+@media all and (min-width: 1700px) {
+	.bigbox{
+		display: inline-block;
+	}
 }
 
 #MenuContainer{
@@ -26,7 +36,7 @@ header{
 #Profile{
 	position: absolute;
 	left: -200px;
-	top: -56px;
+	top: -20px;
 	width: 175px;
 	background-color: white;
 	border-style:solid;
@@ -89,7 +99,6 @@ body{
 }
 
 .bigbox{
-	display:inline-block;
 	padding: 10px 20px;
 	background-color: white;
 	border-style:solid;
@@ -152,6 +161,10 @@ body{
 /*
 	General purpose
 */
+
+img {
+	max-height : 450px;
+}
 
 h4{
 	-webkit-margin-after: 0;
