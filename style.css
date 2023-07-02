@@ -202,8 +202,12 @@ body{
 
 .flexrow:hover {
 	font-weight: bold;
+	border: 1px solid black;
 }
 
+.textbox {
+	max-width: 720px;
+}
  
 /*
 	General purpose
@@ -239,6 +243,7 @@ a{
 	color: black;
 	border: #607d8b solid 2px;
 	padding: 3px;
+	display: inline-block;
 }
 
 p{
