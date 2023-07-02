@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css" media="screen and (min-width:800px)" />
     <link href="style.css" rel="stylesheet" media="screen and (max-width:800px)" />
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -16,16 +15,6 @@
 		<div id="MenuContainer">
 			<img src="images/Me.jpg" id="Profile" />
 			<div id="Menubar">
-				<div  class="bigbox">
-					<ul class="menulist">
-						<li id="ProjectsButton" onclick="show_project()">
-							<a>Projekt</a>
-						</li>
-						<li id="CVButton" onclick="show_cv()">
-							<a>CV</a>
-						</li>
-					</ul>
-				</div>
 				<div  class="bigbox">
 					<div id="MenuMessage">
 						<h2>Välkommen</h2>
@@ -45,6 +34,9 @@
 							<a href="https://www.linkedin.com/in/albin-sj%C3%B6str%C3%B6m-3762a6157/">
 								<img src="images/linkedin.png" alt="LinkedIn" class="smallImage" />
 							</a>
+							<a href="files/cv.pdf" class="smallImage">
+								CV
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -52,125 +44,191 @@
 		</div>
 	</header>
 	<div id="TheRestOfIt">
-		<div id="Projects">
 			<div class="listbox">
-				<div class="bigbox imagebox">
-					<img src="images/retrorunner1.png" alt="NoLogo" />
-				</div>
-				<div class="content">
-					<h2>Retro Runner</h2>
-					<p>
-						GameJam spel gjort under 24 timmar. 
-						Gjord i Godot, exporterad till Html5 <a href="https://zhadowplague.github.io/RetroRunner/Platformer.html">Spela här.</a>
-					</p>
-					<img src="images/retrorunner2.png" />
-				</div>
+				<details>
+					<summary>
+						<div class="flexrow">
+							<h2>+ Retro Runner</h2>
+							<div class="flexrow">
+								<h3>2022</h3>
+								<div class="simagebox">
+									<img src="images/retrorunner1.png" alt="NoLogo" />
+								</div>
+							</div>
+						</div>
+					</summary>
+					<div class="content">
+						<p>
+							GameJam spel gjort under 24 timmar. 
+							Gjord i Godot, exporterad till Html5 <a href="https://zhadowplague.github.io/RetroRunner/Platformer.html">Spela här.</a>
+						</p>
+						<img src="images/retrorunner2.png" />
+					</div>
+				</details>
 			</div>
 			<div class="listbox">
-				<div class="bigbox imagebox">
-					<img src="images/magegod1.png" alt="NoLogo" />
-				</div>
-				<div class="content">
-					<h2>Project MageGod</h2>
-					<p>
-						Action RPG som strävar efter att kombinera spel-upplevelsen av hjälten Invoker i spelet Dota 2 fast med inslag ifrån diverse MMO.<br>
-						Utvecklades i Unity tillsammans med <a href="https://www.linkedin.com/in/william-tyrsing-a45b12174/">William</a> och <a href="https://www.linkedin.com/in/pontus-nilsson-528a0b160/">Pontus</a>.
-					</p>
-					<img src="images/magegod2.png" />
-				</div>
+				<details>
+					<summary>
+						<div class="flexrow">
+							<h2>+ Project MageGod</h2>
+							<div class="flexrow">
+								<h3>2021</h3>
+								<div class="simagebox">
+									<img src="images/magegod1.png" alt="NoLogo" />
+								</div>
+							</div>
+						</div>
+					</summary>
+					<div class="content">
+						<p>
+							Action RPG som strävar efter att kombinera spel-upplevelsen av hjälten Invoker i spelet Dota 2 fast med inslag ifrån diverse MMO.<br>
+							Utvecklades i Unity tillsammans med <a href="https://www.linkedin.com/in/william-tyrsing-a45b12174/">William</a> och <a href="https://www.linkedin.com/in/pontus-nilsson-528a0b160/">Pontus</a>.
+						</p>
+						<img src="images/magegod2.png" />
+					</div>
+				</details>
 			</div>
 			<div class="listbox">
-				<div class="bigbox imagebox">
-					<img src="images/Untitled.png" alt="NoLogo" />
-				</div>
-				<div class="content">
-					<h2>Dream of fighters</h2>
-					<p>
-						Detta har jag lagt delar av min fritid på det senaste åren. Ett turnbased-isch fighting hybrid spel. <br>
-						Spelet skrivs i Godot vilket är en spelmotor man kodar ett Python liknande språk i.
-					</p>
-					<img src="images/Untitled1.png" />
-					<img src="images/Untitled2.png" />
-				</div>
+				<details>
+					<summary>
+						<div class="flexrow">
+							<h2>+ Dream of fighters</h2>
+							<div class="flexrow">
+								<h3>2020</h3>
+								<div class="simagebox">
+									<img src="images/Untitled.png" alt="NoLogo" />
+								</div>
+							</div>
+						</div>
+					</summary>
+					<div class="content">
+						<p>
+							Detta har jag lagt delar av min fritid på det senaste åren. Ett turnbased-isch fighting hybrid spel. <br>
+							Spelet skrivs i Godot vilket är en spelmotor man kodar ett Python liknande språk i.
+						</p>
+						<img src="images/Untitled1.png" />
+						<img src="images/Untitled2.png" />
+					</div>
+				</details>
 			</div>
 			<div class="listbox">
-				<div class="bigbox imagebox">
-					<img src="images/Rascal.png" alt="RascalLogo" />
-				</div>			
-				<div class="content">
-					<h2>The Rascal</h2>
-					<p>
-						Ett grupp-projekt jag jobbade med under studierna. <br>
-						Detta är ett enspelar spel av adventure genren skrivet i Unity/C#. <br>
-						Till detta spel gjorde vi även en trailer.
-					</p>
-					<a href="https://www.youtube.com/watch?v=RQ8JpZ4q-iU"> Länk till trailer </a> <br><br>
-					<img src="images/rascal2.png" />
-				</div>
+				<details>
+					<summary>
+						<div class="flexrow">
+							<h2>+ The Rascal</h2>
+							<div class="flexrow">
+								<h3>2019</h3>
+								<div class="simagebox">
+									<img src="images/Rascal.png" alt="NoLogo" />
+								</div>
+							</div>
+						</div>
+					</summary>	
+					<div class="content">
+						<p>
+							Ett grupp-projekt jag jobbade med under studierna. <br>
+							Detta är ett enspelar spel av adventure genren skrivet i Unity/C#. <br>
+							Till detta spel gjorde vi även en trailer.
+						</p>
+						<a href="https://www.youtube.com/watch?v=RQ8JpZ4q-iU"> Länk till trailer </a> <br><br>
+						<img src="images/rascal2.png" />
+					</div>
+				</details>
 			</div>
 			<div class="listbox">
-				<div class="bigbox imagebox">
-					<span class="helper"></span><img src="images/spacegame.png" alt="SpaceGameLogo" />
-				</div>
-				<div class="content">
-					<h2>SpaceGame</h2>
-					<p>
-						Ännu ett projekt jag jobbade med på fritiden. En egen tolkning av spelet Asteroids. <br>
-						Skrivet i C# Monogame, för platformen Android med hjälp av biblioteket Xamarin.
-					</p>
-					<img src="images/spacegame1.png" />
-				</div>
+				<details>
+					<summary>
+						<div class="flexrow">
+							<h2>+ SpaceGame</h2>
+							<div class="flexrow">
+								<h3>2018</h3>
+								<div class="simagebox">
+									<img src="images/spacegame.png" alt="NoLogo" />
+								</div>
+							</div>
+						</div>
+					</summary>	
+					<div class="content">
+						<p>
+							Ännu ett projekt jag jobbade med på fritiden. En egen tolkning av spelet Asteroids. <br>
+							Skrivet i C# Monogame, för platformen Android med hjälp av biblioteket Xamarin.
+						</p>
+						<img src="images/spacegame1.png" />
+					</div>
+				</details>
 			</div>			
 			<div class="listbox">
-				<div class="bigbox imagebox">
-					<img src="images/RayFighters.png" alt="RayFightersLogo" />
-				</div>
-				<div class="content">
-					<h2>Ray Fighters</h2>
-					<p>
-						Detta är ett grupp-projekt jag jobbade med under studierna på Liu. <br>
-						Ett två spelar fighting spel i 2D skrivet i C++ med SFML biblioteket. <br>
-						Till detta spel gjorde vi även en trailer och en egen hemsida.
-					</p>
-					<a href="https://zhadowplague.github.io/rayfightersSite"> Länk till hemsida </a>
-					<a href="https://bitbucket.org/vrethem/rayfighters/src/master/"> Länk till Git </a> <br> <br>
-					<img src="images/RayFighters2.png" />
-				</div>
+				<details>
+					<summary>
+						<div class="flexrow">
+							<h2>+ Ray Fighters</h2>
+							<div class="flexrow">
+								<h3>2018</h3>
+								<div class="simagebox">
+									<img src="images/RayFighters.png" alt="NoLogo" />
+								</div>
+							</div>
+						</div>
+					</summary>	
+					<div class="content">
+						<p>
+							Detta är ett grupp-projekt jag jobbade med under studierna på Liu. <br>
+							Ett två spelar fighting spel i 2D skrivet i C++ med SFML biblioteket. <br>
+							Till detta spel gjorde vi även en trailer och en egen hemsida.
+						</p>
+						<a href="https://zhadowplague.github.io/rayfightersSite"> Länk till hemsida </a>
+						<a href="https://bitbucket.org/vrethem/rayfighters/src/master/"> Länk till Git </a> <br> <br>
+						<img src="images/RayFighters2.png" />
+					</div>
+				</details>
 			</div>
 			<div class="listbox">
-				<div class="bigbox imagebox">
-					<img src="images/TTubkcid.png" alt="TTubkcidLogo" />
-				</div>
-				<div class="content">
-					<h2>TTubkcid Showdown</h2>
-					<p>
-						Detta är ett grupp-projekt jag jobbade med under studierna på Liu. <br>
-						Det är egen tolkning av spelet Worms skrivet i C++ med SFML biblioteket. <br>
-					</p>
-					<a href="https://bitbucket.org/vrethem/ttubkcid/src/master/"> Länk till Git </a> <br> <br>
-					<img src="images/TTubkcid1.png" />
-				</div>
+				<details>
+					<summary>
+						<div class="flexrow">
+							<h2>+ TTubkcid Showdown</h2>
+							<div class="flexrow">
+								<h3>2017</h3>
+								<div class="simagebox">
+									<img src="images/TTubkcid.png" alt="NoLogo" />
+								</div>
+							</div>
+						</div>
+					</summary>	
+					<div class="content">
+						<p>
+							Detta är ett grupp-projekt jag jobbade med under studierna på Liu. <br>
+							Det är egen tolkning av spelet Worms skrivet i C++ med SFML biblioteket. <br>
+						</p>
+						<a href="https://bitbucket.org/vrethem/ttubkcid/src/master/"> Länk till Git </a> <br> <br>
+						<img src="images/TTubkcid1.png" />
+					</div>
+				</details>
 			</div>
 			<div class="listbox">
-				<div class="bigbox imagebox">
-					<img src="images/cavedin.png" alt="CavedInLogo" />
-				</div>
-				<div class="content">
-					<h2>Caved In</h2>
-					<p>
-						Det första fritidsprojekt jag någonsin jobbat med. <br>
-						Jag jobbade på detta i mellanstadiet. Skrivet i GameMaker8.1.
-					</p>
-					<img src="images/cavedin1.png" />
-				</div>
+				<details>
+					<summary>
+						<div class="flexrow">
+							<h2>+ Caved In</h2>
+							<div class="flexrow">
+								<h3>~2010</h3>
+								<div class="simagebox">
+									<img src="images/cavedin.png" alt="NoLogo" />
+								</div>
+							</div>
+						</div>
+					</summary>
+						<div class="content">
+						<h2></h2>
+						<p>
+							Det första fritidsprojekt jag någonsin jobbat med. <br>
+							Jag jobbade på detta i mellanstadiet. Skrivet i GameMaker8.1.
+						</p>
+						<img src="images/cavedin1.png" />
+					</div>					
+				</details>
 			</div>			
 			<a href="https://www.dotabuff.com/players/15998921" id="SecretLink"> x </a>
-		</div>
-		<div id="CV">
-			<object data="files/cv.pdf" type="application/pdf" width="100%" height="1500px" >
-			 alt: <p>Pdf not found, something wrong</p>
-		</object>
-		</div>
 	</div>
 </body>
 </html>
