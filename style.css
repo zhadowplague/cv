@@ -167,7 +167,7 @@ body{
 	text-align: center;
 	width: 150px;
 	height :150px;
-	vertical-align: middle;	
+	justify-content: center;
 	white-space: nowrap;
 }
 
@@ -175,7 +175,7 @@ body{
 	text-align: center;
 	width: 75px;
 	height :75px;
-	vertical-align: middle;	
+	justify-content: center;	
 	white-space: nowrap;
 	align-items: center;
 	display: flex;
