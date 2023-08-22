@@ -16,16 +16,6 @@ header{
 	#Profile{
 		display: none;
 	}
-	
-	.bigbox{
-		display: block;
-	}
-}
-
-@media all and (min-width: 1700px) {
-	.bigbox{
-		display: inline-block;
-	}
 }
 
 #MenuContainer{
@@ -55,30 +45,26 @@ header{
 	padding-left: 0px;
 }
 
-.menulist li{
+.linkbox {
 	display:flex;
-	margin: 5px;
+	flex-wrap: wrap;
+	background-color: white;
+	border-style:solid;
+	border-color:black;
+	border-width: 2px 2px 2px 0px;
+	align-items:center;
+	justify-content:space-evenly;
 }
 
-.linklist{
-	list-style-type: none;
-	-webkit-padding-start: 0;
-	-webkit-margin-after: 2em;
-	padding-left: 0px;
+.linkbutton {
+	width:50px;
+	height:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin: 1%;
 }
 
-.linklist li{
-	display: flex;
-	margin: 5px;
-	justify-content: center;
-}
-
-.linklist li a{
-	display: flex;
-	margin: 5px;
-	justify-content: center;
-	align-items: center;
-}
 
 /*
 	Body stuff
