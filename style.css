@@ -52,8 +52,15 @@ header{
 	border-style:solid;
 	border-color:black;
 	border-width: 2px 2px 2px 0px;
-	align-items:center;
 	justify-content:space-evenly;
+	flex-direction: column;
+	width: 160px;
+}
+
+.linkrow {
+	display: flex;
+	justify-content:space-evenly;
+	width: 160px;
 }
 
 .linkbutton {
