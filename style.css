@@ -132,6 +132,7 @@ body{
 }
 
 .content{
+	overflow: hidden;
 	display: inline-block;
 	vertical-align: top;
 	margin-top: 2px;
@@ -228,8 +229,13 @@ details[open] h2::before {
 	content: "- ";
 }
 
+.pixel {
+	image-rendering: pixelated;
+}
+
 img {
 	max-height : 450px;
+	max-width: 100%;
 }
 
 h4{
