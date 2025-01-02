@@ -95,10 +95,6 @@ body{
 	height: 1000px;
 }
 
-#SecretLink{
-	float: right;
-}
-
 .bigbox{
 	padding: 10px 20px;
 	background-color: white;
@@ -150,7 +146,8 @@ body{
 
 .smallImage{
 	height: 50px;
-	width: 50px;
+	/* width: 50px; */
+	aspect-ratio: auto;
 }
 
 .mediumImage{
